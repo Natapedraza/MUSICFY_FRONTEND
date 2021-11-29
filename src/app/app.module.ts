@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { CardAlbumComponent } from './components/card-album/card-album.component';
 import { ListAlbumesComponent } from './components/list-albumes/list-albumes.component';
 import { NavComponent } from './components/nav/nav.component';
+import { PlayerComponent } from './components/player/player.component';
 
 
 @NgModule({
@@ -13,6 +14,7 @@ import { NavComponent } from './components/nav/nav.component';
     CardAlbumComponent,
     ListAlbumesComponent,
     NavComponent,
+    PlayerComponent,
   ],
   imports: [
     BrowserModule
