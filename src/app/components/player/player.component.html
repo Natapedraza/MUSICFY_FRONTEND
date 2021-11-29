@@ -1,0 +1,24 @@
+<div class="w-auto h-auto">
+    <ul *ngFor="let file of files">
+        <li (click)="openFile(file.url)">
+            Name: {{file.name}} Album: {{file.album}}
+        </li>
+    </ul>
+
+    <section class="bg-gray-900 text-white absolute bottom-0 w-screen">
+        <div class="flex justify-between items-center">
+            <span>Time: {{currentTime}}</span>
+            <section class="flex gap-4">
+                <input class="w-8" type="range" min="0" max="1" step="0.01" value="0.5" (input)="setVolumen($event)">
+                <button (click)="before()"><img src="../../../assets/back.png" alt=""></button>
+                <button (click)="pause()"><img src="../../../assets/Pause.png" alt=""></button>
+                <button (click)="play()"><img src="../../../assets/Play.png" alt=""></button>
+                <button (click)="stop()"><img src="../../../assets/Stop.png" alt=""></button>
+                <button (click)="openFile()"><img src="../../../assets/next.png" alt=""></button>
+            </section>
+            <span>Duration: {{duration}}</span>
+        </div>
+        <input class="w-full" type="range" min="0" max="{{seekDuration}}" step="1" [value]="seek"
+            (input)="setSeekTo($event)">
+    </section>
+</div>
