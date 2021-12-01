@@ -6,6 +6,7 @@ import { CardAlbumComponent } from './components/card-album/card-album.component
 import { ListAlbumesComponent } from './components/list-albumes/list-albumes.component';
 import { NavComponent } from './components/nav/nav.component';
 import { PlayerComponent } from './components/player/player.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { PlayerComponent } from './components/player/player.component';
     PlayerComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
