@@ -103,6 +103,7 @@ dist
 # TernJS port file
 .tern-port
 
+<<<<<<< HEAD
 
 # Created by https://www.toptal.com/developers/gitignore/api/angular,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=angular,node
@@ -268,3 +269,15 @@ dist
 .svelte-kit
 
 # End of https://www.toptal.com/developers/gitignore/api/angular,node
+=======
+# misc
+/.angular/cache
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+>>>>>>> 4f1cadf550b8ad2aa23ef45f570b24110cd94482

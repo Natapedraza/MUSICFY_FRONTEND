@@ -1,4 +1,62 @@
-<div class=" w-screen h-screen bg-gradient-to-b from-gray-600 to-gray-700">
-    <app-list-albumes></app-list-albumes>
-    <app-player>Aqui</app-player>
+<div class="row">
+  <div class="col-sm-3">
+    <p></p>
+    <div class="d-flex flex-column flex-shrink-0 p-3  w-screen h-screen bg-gradient-to-b from-gray-600 to-gray-700">
+      <a href="/albums" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
+        <span class="fs-1 text-white">Musicfy</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="/albums" class="nav-link link-dark text-white" aria-current="page" onclick="nav-link active">
+            <svg class="bi me-2" width="16" height="32">
+              <use xlink:href="#home"></use>
+            </svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="/categories" class="nav-link link-dark text-white">
+            <svg class="bi me-2" width="16" height="32">
+              <use xlink:href="#table"></use>
+            </svg>
+            Categories
+          </a>
+        </li>
+        <li>
+          <a href="/player" class="nav-link link-dark text-white">
+            <svg class="bi me-2" width="16" height="32">
+              <use xlink:href="#table"></use>
+            </svg>
+            Player
+          </a>
+        </li>
+        <li>
+        <li>
+          <a href="/login" class="nav-link link-dark text-white">
+            <svg class="bi me-2" width="16" height="32">
+              <use xlink:href="#table"></use>
+            </svg>
+            iniciar sesion
+          </a>
+        </li>
+        <li>
+          <svg class="bi me-2" width="16" height="180">
+          </svg>
+        </li>
+      </ul>
+    </div>
+    <p></p>
+  </div>
+  <div class="col-sm-9 bg-gradient-to-b from-gray-700 to-gray-900">
+
+    <div>
+
+      <router-outlet></router-outlet>
+
+    </div>
+  </div>
 </div>

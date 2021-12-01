@@ -1,11 +1,11 @@
-<div class="w-auto h-auto">
+<div class="w-auto h-auto ">
     <ul *ngFor="let file of files">
         <li (click)="openFile(file.url)">
             Name: {{file.name}} Album: {{file.album}}
         </li>
     </ul>
 
-    <section class="bg-gray-900 text-white absolute bottom-0 w-screen">
+    <section class="bg-gray-900 text-white absolute bottom-0 ">
         <div class="flex justify-between items-center">
             <span>Time: {{currentTime}}</span>
             <section class="flex gap-4">
