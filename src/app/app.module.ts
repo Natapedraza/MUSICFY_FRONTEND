@@ -7,6 +7,7 @@ import { ListAlbumesComponent } from './components/list-albumes/list-albumes.com
 import { NavComponent } from './components/nav/nav.component';
 import { PlayerComponent } from './components/player/player.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LoginComponent } from './components/login/login.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
     ListAlbumesComponent,
     NavComponent,
     PlayerComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

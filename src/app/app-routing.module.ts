@@ -6,12 +6,13 @@ import { ListAlbumesComponent } from './components/list-albumes/list-albumes.com
 import { CardAlbumComponent } from './components/card-album/card-album.component';
 
 
+
 const routes:Routes = [
   { path: '', redirectTo : "/albums", pathMatch : "full" },
   //{ path: '', component: },
   { path: 'player', component: PlayerComponent},
   { path: 'albums', component: ListAlbumesComponent},
-  { path: 'categories', component: CardAlbumComponent},  // CAMBIAR POR EL MODULO DE CATEGORIAS DE SER NECESARIO
+  { path: 'categories', component: CardAlbumComponent},  // CAMBIAR POR EL MODULO DE CATEGORIAS DE SER NECESARIO  
 ];
 
 @NgModule({

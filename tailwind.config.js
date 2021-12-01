@@ -12,6 +12,7 @@ module.exports = {
         Stop: "./src/assets/Stop.png",
         next: "./src/assets/next.png",
         back: "./src/assets/back.png",
+        login: "./src/assets/login.png",
       },
     },
   },
