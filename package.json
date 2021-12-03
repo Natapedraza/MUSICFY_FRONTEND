@@ -2,11 +2,15 @@
   "name": "musicfy",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "lite": "lite-server",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
@@ -18,10 +22,13 @@
     "@angular/platform-browser": "~13.0.0",
     "@angular/platform-browser-dynamic": "~13.0.0",
     "@angular/router": "~13.0.0",
+    "express": "^4.17.1",
     "moment": "^2.29.1",
+    "path": "^0.12.7",
     "rxjs": "~7.4.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.11.4"
+    "zone.js": "~0.11.4",
+    "typescript": "~4.4.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~13.0.2",
@@ -37,5 +44,8 @@
     "karma-jasmine-html-reporter": "~1.7.0",
     "tailwindcss": "^2.2.19",
     "typescript": "~4.4.3"
+  },"engines": {
+    "node": "10.14.2",
+      "npm": "6.4.1"
   }
 }
